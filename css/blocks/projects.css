@@ -35,19 +35,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-left: 66px;
-  /* margin-right: 66px; */
 }
-
-/* .projects-block__main-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 44px;
-}
-
-.projects-block__main-row:last-child {
-  margin-bottom: 26px;
-} */
 
 .projects-block__card {
   height: 250px;
