@@ -1,0 +1,49 @@
+.button {
+  background: #005f61;
+  color: #fff;
+  border-radius: 7px;
+  padding: 12px 17px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.button:hover {
+  transition: .5s;
+  background: #008689;
+  cursor: pointer;
+}
+
+.button__submit input[type=submit] {
+  font-family: 'Inter', sans-serif;
+  background: #005f61;
+  color: #fff;
+  border-radius: 7px;
+  padding: 12px 17px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .5s;
+  border: none;
+}
+
+.button__submit input[type=submit]:hover {
+  transition: .5s;
+  background: #008689;
+  cursor: pointer;
+}
+
+.projects-block__enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__button {
+  width: 215px;
+  height: 45px;
+  text-align: center;
+}

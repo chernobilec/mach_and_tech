@@ -1,0 +1,22 @@
+.menu {
+  font-weight: 800;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item {
+  transition: .2s;
+  margin-left: 1.34rem;
+}
+
+.menu__item:hover {
+  color: #b1dedf;
+  transition: .2s;
+}
+
+.menu__item:first-child {
+  margin-left: 0;
+}
