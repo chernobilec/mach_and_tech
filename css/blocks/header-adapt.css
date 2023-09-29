@@ -1,0 +1,122 @@
+.header {
+  background-image: url("../../img/head.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1280px;
+}
+
+.header__wrapper--menu {
+  background-color: rgba(0, 134, 137, 0.85);
+  width: 100%;
+}
+
+.header__string--up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__string--down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__column {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.mainlogo__img {
+  
+  margin-top: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
+.contacts {
+  margin: 10px 27px 0 0;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.phone__icon {
+  margin-right: 10px;
+}
+
+.contacts__mail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.mail__icon {
+  margin-right: 5px;
+}
+
+.order {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.social__youtube {
+  display: flex;
+  align-items: center;
+}
+
+.social__youtube--name {
+  margin: 0 5px 0 0;
+}
+
+.social__youtube--link {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.social__youtube--link:hover {
+  color: #00a9ac;
+  transition: 0.5s;
+}
+
+.menu {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  padding: 5px;
+  margin: 0 1.2rem;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.menu__link:hover {
+  color: #b1dedf;
+  transition: .2s;
+}
