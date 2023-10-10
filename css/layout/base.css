@@ -43,15 +43,14 @@ p {
 
 .wrapper {
   overflow: hidden;
-  min-width: 1280px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .wrapper__content {
+  width: 100%;
   flex: 1;
-  /* min-height: 100%; */
 }
 
 .maincontent {

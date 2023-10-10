@@ -12,6 +12,12 @@
   margin-left: 1.34rem;
 }
 
+@media (max-width: 1040px) {
+  .menu__item {
+    font-size: 14px;
+  }
+}
+
 .menu__item:hover {
   color: #b1dedf;
   transition: .2s;
