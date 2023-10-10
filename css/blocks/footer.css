@@ -1,5 +1,8 @@
 .footer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 157px;
   background-image: url("../../img/footer.jpg");
   background-position: center;
@@ -8,16 +11,50 @@
   background-size: cover;
 }
 
+@media (max-width: 930px) {
+  .footer {
+    height: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: 210px;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   height: 127px;
-  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 1280px;
+  /* margin: 0 auto; */
+  min-width: 1280px;
 }
 
-.footer__wrapper--down {
+@media (max-width: 1280px) {
+  .footer__wrapper {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .footer__wrapper {
+    min-height: 235px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__wrapper {
+    width: 80%;
+    min-height: 210px;
+  }
+}
+
+.footer__wrapper--licence {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,8 +71,10 @@
   margin: 23px 0px 0px 66px;
 }
 
-.footer__column {
-  display: flex;
+@media (max-width: 930px) {
+  .footerlogo__img {
+    margin: 20px 0;
+  }
 }
 
 .footer__column--center {
@@ -46,6 +85,20 @@
 .footer__contacts {
   margin-top: 38px;
   display: flex;
+}
+
+@media (max-width: 1060px) {
+  .footer__contacts {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 930px) {
+  .footer__contacts {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
 }
 
 .footer__contacts--left {
@@ -89,6 +142,42 @@
   margin-right: 75px;
 }
 
+@media (max-width: 1060px) {
+  .footer__socials {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 930px) {
+  .footer__socials {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  .phone__icon--footer {
+  width: 16px;
+  height: 16px;
+  }
+
+  .mail__icon--footer {
+    height: 16px;
+    }
+
+  .adress__icon {
+    height: 16px;
+  }
+}
+
 .license {
   margin: 0px 0px 0px 66px;
 }
+
+@media (max-width: 930px) {
+  .license {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+

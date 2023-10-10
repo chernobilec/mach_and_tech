@@ -24,11 +24,9 @@
 .header__wrapper {
   font-weight: 800;
   display: flex;
-  /* flex-wrap: wrap; */
   min-height: 156px;
   align-items: flex-start;
   justify-content: space-between;
-  /* margin: 0 auto; */
   min-width: 1280px;
 }
 
