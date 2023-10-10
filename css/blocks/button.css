@@ -1,4 +1,4 @@
-/* .button {
+.button {
   background: #005f61;
   color: #fff;
   border-radius: 7px;
@@ -8,13 +8,13 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: .5s;
-} */
+}
 
-/* .button:hover {
+.button:hover {
   transition: .5s;
   background: #008689;
   cursor: pointer;
-} */
+}
 
 .button__submit input[type=submit] {
   font-family: 'Inter', sans-serif;
