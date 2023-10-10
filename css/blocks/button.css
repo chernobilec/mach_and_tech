@@ -38,8 +38,8 @@
 
 @media (max-width: 480px) {
   .button__submit input[type=submit] {
-    font-size: 12px;
-    padding: 8px 10px;
+    font-size: 13px;
+    padding: 10px 10px;
   }
 }
 
