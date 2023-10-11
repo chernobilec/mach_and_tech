@@ -1,22 +1,60 @@
 .form-section {
-  height: 376px;
-  margin-bottom: 77px;
+  height: 100%;
+  padding: 35px 0;
+  margin-bottom: 50px;
   font-family: 'Inter', sans-serif;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(0, 134, 137, 0.65);
 }
 
 .form-block {
   display: flex;
-  margin-top: 47px;
+  align-items: center;
+  max-width: 1280px;
+}
+
+@media (max-width: 1160px) {
+  .form-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1160px) {
+  .form-block {
+    flex-wrap: wrap;
+  }
 }
 
 .form-block__text {
+  display: flex;
   font-size: 16px;
-  width: 37.5%;
+  width: 33%;
   margin-right: 32px;
   margin-left: 75px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1160px) {
+  .form-block__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-block__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .form-block__title {
@@ -27,22 +65,71 @@
   margin-bottom: 28px;
 }
 
+@media (max-width: 1160px) {
+  .form-block__title {
+    font-size: 25px;
+  }
+}
+
 .form-block__description {
   color: #000;
   margin-bottom: 44px;
 }
 
+@media (max-width: 1160px) {
+  .form-block__description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-block__description {
+    margin-bottom: 15px;
+  }
+}
+
 .form-block__form {
-  width: 60%;
-  margin-right: 75px;
-  /* margin-left: 16px; */
-  
+  width: 50%;
+  margin-right: 75px;  
+}
+
+@media (max-width: 1160px) {
+  .form-block__form {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+  }
 }
 
 .form-fields {
   display: flex;
   justify-content: space-around;
 }
+
+@media (max-width: 1160px) {
+  .form-fields {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-fields__col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1160px) {
+  .form-fields__col {
+    justify-content: center;
+  }
+}
+
+.form-fields__col:last-child {
+  align-content: flex-start;
+}
+
 
 .field__input {
   color: #767676;
@@ -71,4 +158,24 @@
   font-size: 17px;
   color: #434343;
   margin-top: 5px;
+}
+
+.form__info {
+  display: flex;
+}
+
+@media (max-width: 1160px) {
+  .form__info {
+    display: none;
+  }
+}
+
+.form__info--mobile {
+  display: none;
+}
+
+@media (max-width: 1160px) {
+  .form__info--mobile {
+    display: flex;
+  }
 }

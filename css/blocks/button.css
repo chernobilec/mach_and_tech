@@ -54,3 +54,23 @@
   height: 45px;
   text-align: center;
 }
+
+.button__submit--form {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .button__submit--form {
+    display: none;
+  }
+}
+
+.button__submit--form--mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .button__submit--form--mobile {
+    display: block;
+  }
+}

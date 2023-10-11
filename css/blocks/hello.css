@@ -51,7 +51,7 @@
   margin: 21px 0 19px 66px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1235px) {
   .hello-block__title {
     font-size: 23px;
     margin: 21px 15px 19px 15px;
