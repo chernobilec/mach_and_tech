@@ -1,25 +1,65 @@
 .hello {
-  height: 601px;
+  height: 100%;
   display: flex;
   justify-content: center;
   color: #000;
   font-family: 'Inter', sans-serif;
 }
 
+@media (max-width: 1280px) {
+  .hello {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .hello {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello {
+    width: 80%;
+    min-height: 210px;
+  }
+}
+
 .hello-block {
   background-image: url(../../img/hello-backgroung.png);
   background-position: center;
   background-size: cover;
-  min-width: 1280px;
+  width: 1280px;
+}
+
+@media (max-width: 930px) {
+  .hello-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .hello-block__title {
   display: flex;
-  justify-content: flex-start;
   text-transform: uppercase;
   font-size: 29px;
   font-weight: 800;
   margin: 21px 0 19px 66px;
+}
+
+@media (max-width: 930px) {
+  .hello-block__title {
+    font-size: 25px;
+    margin: 21px 15px 19px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 }
 
 .hello-block__card {
@@ -34,6 +74,35 @@
   margin: 0 0 35px 66px;
 }
 
+@media (max-width: 930px) {
+  .hello-block__card {
+    margin: 0 0 35px 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello-block__card {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 930px) {
+  .hello-block__list {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello-block__list {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .hello-block__item {
   display: flex;
   align-items: center;
@@ -43,11 +112,17 @@
   margin-left: 29px;
 }
 
-.hello-block__item:first-child {
-  margin-top: 14px;
+@media (max-width: 480px) {
+  .hello-block__item {
+    font-size: 15px;
+    width: 88%;
+    height: 100%;
+    margin-bottom: 14px;
+    margin-left: 22px;
+  }
 }
 
-.hello-block__item:last-child {
+.hello-block__item:first-child {
   margin-top: 14px;
 }
 
