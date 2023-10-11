@@ -53,13 +53,13 @@
 
 @media (max-width: 930px) {
   .hello-block__title {
-    font-size: 25px;
+    font-size: 23px;
     margin: 21px 15px 19px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+  }
 }
 
 .hello-block__card {
