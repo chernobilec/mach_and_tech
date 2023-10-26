@@ -61,6 +61,7 @@
 @media (max-width: 480px) {
   .aboutus-block__title {
     width: 80%;
+    margin: 21px 0 15px 0;
   }
 }
 
@@ -79,6 +80,14 @@
   .aboutus-block__text {
     max-width: 430px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-block__text {
+    max-width: 380px;
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 }
 
