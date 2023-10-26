@@ -42,6 +42,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .aboutus-block {
+    height: 800px;
+  }
+}
+
 .aboutus-block__title {
   display: flex;
   text-transform: uppercase;
@@ -85,7 +91,7 @@
 
 @media (max-width: 480px) {
   .aboutus-block__text {
-    max-width: 380px;
+    max-width: 345px;
     margin-left: 0;
     margin-bottom: 10px;
   }
