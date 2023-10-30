@@ -25,8 +25,8 @@
   }
 }
 
-.trends__container {
-  width: 1280px;
+.trends-block {
+  max-width: 1280px;
 }
 
 /* @media (max-width: 930px) {
@@ -105,7 +105,7 @@
   height: 389px;
   width: 536px;
   border-radius: 5px;
-  margin-right: 40px;
+  margin-right: 84px;
   margin-bottom: 26px;
   display: flex;
   align-items: flex-end;
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 768px) {
   .trends-block__card {
     height: 250px;
     width: 350px;
@@ -151,7 +151,7 @@
   background-color: rgb(0, 134, 137, 0.75)
 }
 
-@media (max-width: 930px) {
+@media (max-width: 768px) {
   .trends-block__card-bgr {
     width: 350px;
     height: 55px;
@@ -168,7 +168,7 @@
   text-align: center;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 768px) {
   .trends-block__card-title {
     width: 350px;
     font-size: 18px;
