@@ -1,0 +1,137 @@
+.newspage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+@media (max-width: 1280px) {
+  .newspage {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .newspage {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .newspage {
+    width: 80%;
+    min-height: 210px;
+  }
+}
+
+.newspage__block {
+  max-width: 1280px;
+  margin-bottom: 30px;
+  padding: 0px 66px 0 66px;
+}
+
+@media (max-width: 930px) {
+  .newspage__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0 0px;
+  }
+}
+
+.newspage__title {
+  display: flex;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 800;
+  margin: 21px 0 10px 66px;
+}
+
+@media (max-width: 930px) {
+  .newspage__title {
+    font-size: 23px;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.newspage__date {
+  color: #767676;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 0 21px 66px;
+}
+
+@media (max-width: 930px) {
+  .newspage__date {
+    margin: 0px 0px 21px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.newspage__pic {
+  margin: 0px 0 21px 66px;
+}
+
+@media (max-width: 930px) {
+  .newspage__pic {
+    margin: 0px 0px 21px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.newspage__img {
+  width: 85%;
+}
+
+@media (max-width: 930px) {
+  .newspage__img {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.newspage__text {
+  margin: 0px 10px 21px 66px;
+  text-align: justify;
+}
+
+@media (max-width: 930px) {
+  .newspage__text {
+    width: 85%;
+    margin: 0px 30px 21px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .newspage__text {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .newspage__text {
+    width: 40%;
+  }
+} */
+
+

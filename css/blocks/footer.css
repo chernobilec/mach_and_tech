@@ -28,7 +28,7 @@
   height: 127px;
   align-items: flex-start;
   justify-content: space-between;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   min-width: 1280px;
 }
 
