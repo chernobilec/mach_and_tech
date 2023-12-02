@@ -119,7 +119,7 @@
 @media (max-width: 930px) {
   .contacts {
     margin: 0 0 24px 0;
-    align-items:center
+    align-items: center;
   }
 }
 

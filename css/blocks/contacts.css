@@ -1,0 +1,180 @@
+.comdata {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+@media (max-width: 1280px) {
+  .comdata {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 930px) {
+  .comdata {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.comdata__block {
+  display: flex;
+  flex-direction: column;
+  margin: 21px 30px 0 30px;
+}
+
+.comdata__title {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+@media (max-width: 930px) {
+  .comdata__title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+.comdata__details {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+}
+
+@media (max-width: 930px) {
+  .comdata__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.details__adress {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  margin-right: 92px;
+}
+
+@media (max-width: 930px) {
+  .details__adress {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+.adress__title {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.adress__info {
+  font-size: 18px;
+}
+
+@media (max-width: 930px) {
+  .details__adress {
+    text-align: center;
+    margin-bottom: 21px;
+  }
+}
+
+
+.details__phones {
+  display: flex;
+  flex-direction: column;
+  max-width: 245px;
+  margin-right: 92px;
+}
+
+@media (max-width: 930px) {
+  .details__phones {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+.phones__title {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.phones__first {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.phones__second {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.phones__number {
+  width: 22px;
+  height: 22px;
+  margin-right: 19px;
+}
+
+.details__mail {
+  display: flex;
+  flex-direction: column;
+  max-width: 235px;
+}
+
+@media (max-width: 930px) {
+  .details__mail {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+.mail__title {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.mail__adress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mail__adress-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 19px;
+}
+
+.comdata__map {
+  display: flex;
+  max-width: 100%;
+}
+
+.map__photo {
+  max-width: 100%;
+}
