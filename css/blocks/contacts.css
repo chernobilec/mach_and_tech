@@ -173,6 +173,7 @@
 .comdata__map {
   display: flex;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .map__photo {
