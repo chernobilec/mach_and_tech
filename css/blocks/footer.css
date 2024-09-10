@@ -125,7 +125,7 @@
 .footer__contacts--left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   /* margin-right: 17px; */
 }
 
