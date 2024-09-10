@@ -137,7 +137,7 @@
 .details__mail {
   display: flex;
   flex-direction: column;
-  max-width: 235px;
+  max-width: 260px;
 }
 
 @media (max-width: 930px) {
