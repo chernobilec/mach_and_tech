@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/sliderss/simple-adaptive-slider.css">
+  <script defer src="../../js/siderss/simple-adaptive-slider.min.js"></script>
+
 
   <title>ПРОМТЕХНОЛОГИИ И ОБОРУДОВАНИЕ | Проекты</title>
 </head>
@@ -195,23 +198,42 @@
                 <img src="../../img/title.png" alt="" class="projtitlestring--right">
               </div>
 
-              <div class="project-block__param">
-                <div class="slider">
-                  <div class="slider-inner">
-                    <img class="slide1img" src="../../img/prjslider/slide01.png" alt="">
-                    <img class="slide1img" src="../../img/prjslider/slide02.png" alt="">
-                    <img class="slide1img" src="../../img/prjslider/slide03.png" alt="">
-                    <img class="slide1img" src="../../img/prjslider/slide04.png" alt="">
-                    <img class="slide1img" src="../../img/prjslider/slide05.png" alt="">
-                  </div>
-                  <div href="#" class="sliderprev">
-                    <img src="../../img/prjslider/slidrpev1.png" alt="" class="prev">
-                  </div>
-                  <div href="#" class="slidernext">
-                    <img src="../../img/prjslider/slidnext1.png" alt="" class="next">
+              <!-- Слайдер -->
+              <div class="itcss">
+                <div class="itcss__wrapper">
+                  <div class="itcss__items">
+                    <div class="itcss__item">
+                      <img class="img-fluid" src="../../img/prjslider/slide01.png" alt="slider1img">
+                      <img class="img-fluid1" src="../../img/prjslider/slide1.png" alt="slider1img">
+                      <img class="img-fluid2" src="../../img/prjslider/slide001.png" alt="slider1img">
+                    </div>
+                    <div class="itcss__item">
+                      <img class="img-fluid" src="../../img/prjslider/slide02.png" alt="slider2img">
+                      <img class="img-fluid1" src="../../img/prjslider/slide2.png" alt="slider1img">
+                      <img class="img-fluid2" src="../../img/prjslider/slide002.png" alt="slider1img">
+                    </div>
+                    <div class="itcss__item">
+                      <img class="img-fluid" src="../../img/prjslider/slide03.png" alt="slider3img">
+                      <img class="img-fluid1" src="../../img/prjslider/slide3.png" alt="slider1img">
+                      <img class="img-fluid2" src="../../img/prjslider/slide003.png" alt="slider1img">
+                    </div>
+                    <div class="itcss__item">
+                      <img class="img-fluid" src="../../img/prjslider/slide04.png" alt="slider4img">
+                      <img class="img-fluid1" src="../../img/prjslider/slide4.png" alt="slider1img">
+                      <img class="img-fluid2" src="../../img/prjslider/slide004.png" alt="slider1img">
+                    </div>
+                    <div class="itcss__item">
+                      <img class="img-fluid" src="../../img/prjslider/slide05.png" alt="slider5img">
+                      <img class="img-fluid1" src="../../img/prjslider/slide5.png" alt="slider1img">
+                      <img class="img-fluid2" src="../../img/prjslider/slide005.png" alt="slider1img">
+                    </div>
                   </div>
                 </div>
+                <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+                <a class="itcss__btn itcss__btn_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="itcss__btn itcss__btn_next" href="#" role="button" data-slide="next"></a>
               </div>
+              <!-- Конец слайдера -->
 
               <div class="project-block__desc">
                 <img src="../../img/title.png" alt="" class="projtitlestring--left">
@@ -219,6 +241,26 @@
                   готовая продукция
                 </h2>
                 <img src="../../img/title.png" alt="" class="projtitlestring--right">
+              </div>
+              <div class="project-block__products">
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product1.png" alt="">
+                </div>
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product2.png" alt="">
+                </div>
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product3.png" alt="">
+                </div>
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product4.png" alt="">
+                </div>
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product5.png" alt="">
+                </div>
+                <div class="products__img">
+                  <img class="product__img" src="../../img/products/pj1/product6.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -336,7 +378,8 @@
 
   <script src="../../js/jQuery.js"></script>
   <script src="../../js/hamburger.js"></script>
-  <script src="../../js/slider.js"></script>
+  <script src="../../js/sliderss.js"></script>
+
 
 </body>
 </html>

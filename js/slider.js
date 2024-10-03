@@ -1,32 +1,50 @@
 $(document).ready(function() {
-  let slider = $('.slider');
-  let sliderInner = slider.find('.slider-inner');
-  let prevButton = slider.find('.sliderprev');
-  let nextButton = slider.find('.slidernext');
-  let imgWidth = sliderInner.find('img').width();
-  let numImages = sliderInner.find('img').length;
-  let currentImage = 0;
+  var sliderInner = $('.slider-inner');
+  var slides = sliderInner.find('img');
+  var slideWidth = sliderInner.width();
+  var slideCount = slides.length;
+  var currentSlide = 0;
 
+  // Добавляем позиционирование абсолютное для изображений
+  slides.css({
+    'position': 'absolute',
+    'top': 0,
+    'left': 0,
+    'width': '100%',
+    'height': '100%'
+  });
 
-prevButton.on('click', function() {
-  event.preventDefault(); // Добавьте эту строку
-  currentImage--;
-  if (currentImage < 0) {
-    currentImage = numImages - 1;
+  // Добавляем события для кнопок следующего и предыдущего слайда
+  $('.slidernext').on('click', function() {
+    switchSlide(currentSlide + 1);
+  });
+
+  $('.sliderprev').on('click', function() {
+    switchSlide(currentSlide - 1);
+  });
+
+  // Функция для переключения слайда
+  function switchSlide(index) {
+    if (index < 0) {
+      index = slideCount - 1;
+    } else if (index >= slideCount) {
+      index = 0;
+    }
+
+    currentSlide = index;
+    sliderInner.animate({
+      'left': -index * slideWidth
+    }, 500, function() {
+      updateImages();
+    });
   }
-  sliderInner.animate({
-    left: -currentImage * imgWidth
-  }, 500);
-});
 
-nextButton.on('click', function() {
-  event.preventDefault(); // Добавьте эту строку
-  currentImage++;
-  if (currentImage >= numImages) {
-    currentImage = 0;
+  // Функция для обновления изображений
+  function updateImages() {
+    slides.removeClass('active');
+    slides.eq(currentSlide).addClass('active');
   }
-  sliderInner.animate({
-    left: -currentImage * imgWidth
-  }, 500);
-});
+
+  // Инициализируем слайдер
+  updateImages();
 });
