@@ -217,13 +217,26 @@
   }
 }
 
+@media (max-width: 930px) {
+  .footer__string--down {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .license {
   margin: 0px 0px 0px 66px;
+}
+
+.license:last-child {
+  margin: 0px 0px 0px 6px;
 }
 
 @media (max-width: 930px) {
   .license {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
+    max-width: 335px;
+    text-align: center;
   }
 }
