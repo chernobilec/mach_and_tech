@@ -97,6 +97,7 @@
   align-items: flex-end;
   box-shadow: 4px 4px 4px #d1d1d1;
   transition: .5s;
+  background-size: cover;
 }
 
 @media (max-width: 1235px) {
@@ -128,4 +129,3 @@
   margin: 11px 9px 9px 11px;
   width: 330px;
 }
-
