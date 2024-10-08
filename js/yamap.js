@@ -1,14 +1,15 @@
-let center = [55.746405, 49.250701];
+// let center = [55.746405, 49.250701];
 
 function init() {
 	let map = new ymaps.Map('map', {
-		center: center,
+		center: [55.794093, 49.222426],
 		zoom: 17
 	});
 
-  let Placemark = new ymaps.Placemark(center,
+  let Placemark = new ymaps.Placemark(map.getCenter(),
   {
-    hintContent: 'ПРОМТЕХНОЛОГИИ И ОБОРУДОВАНИЕ'
+    hintContent: 'ПРОМТЕХНОЛОГИИ И ОБОРУДОВАНИЕ',
+    balloonContent: 'Это красивая метка'
   },
   {
     // balloonContentHeader: 'Заголовок 1',
@@ -17,9 +18,9 @@ function init() {
   },
   {
     iconLayout: 'default#image',
-    iconImageHref: 'https://cdn-icons-png.flaticon.com/128/1201/1201684.png',
-    iconImageSize: [128, 128],
-    iconImageOffset: [0, 0]
+    iconImageHref: '../img/icons/Logo_PIO.png',
+    iconImageSize: [30, 30],
+    iconImageOffset: [-10, -10]
   }
 );
 
