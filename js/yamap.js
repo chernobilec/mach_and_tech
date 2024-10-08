@@ -1,5 +1,3 @@
-// let center = [55.746405, 49.250701];
-
 function init() {
 	let map = new ymaps.Map('map', {
 		center: [55.794093, 49.222426],
@@ -13,11 +11,11 @@ function init() {
   {
     iconLayout: 'default#image',
     iconImageHref: '../img/icons/Logo_PIO.png',
-    iconImageSize: [30, 30],
-    iconImageOffset: [0, 0]
+    iconImageSize: [45, 45],
+    iconImageOffset: [-18, -60]
   }
 );
- 
+
 map.geoObjects.add(Placemark);
 
 }
