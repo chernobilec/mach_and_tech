@@ -1,28 +1,30 @@
-initMap();
+let center = [55.746405, 49.250701];
 
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await YMaps3.ready;
+function init() {
+	let map = new ymaps.Map('map', {
+		center: center,
+		zoom: 17
+	});
 
-    const {YMap, YMapDefaultSchemeLayer} = YMaps3;
+  let Placemark = new ymaps.Placemark(center,
+  {
+    hintContent: 'ПРОМТЕХНОЛОГИИ И ОБОРУДОВАНИЕ'
+  },
+  {
+    // balloonContentHeader: 'Заголовок 1',
+    // balloonContentBody: 'Основной текст',
+    // balloonContentFooter: 'Подвал',
+  },
+  {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://cdn-icons-png.flaticon.com/128/1201/1201684.png',
+    iconImageSize: [128, 128],
+    iconImageOffset: [0, 0]
+  }
+);
 
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map'),
+map.geoObjects.add(Placemark);
 
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.588144, 55.733842],
-
-                // Уровень масштабирования
-                zoom: 10
-            }
-        }
-    );
-
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
 }
+
+ymaps.ready(init);
