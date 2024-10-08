@@ -17,7 +17,7 @@ function init() {
     iconImageOffset: [0, 0]
   }
 );
-
+ 
 map.geoObjects.add(Placemark);
 
 }
