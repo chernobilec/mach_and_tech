@@ -1,10 +1,12 @@
+"use strict";
+
 function init() {
-	let map = new ymaps.Map('map', {
+	const map = new ymaps.Map('map', {
 		center: [55.794093, 49.222426],
 		zoom: 17
 	});
 
-  let Placemark = new ymaps.Placemark(map.getCenter(),
+  const Placemark = new ymaps.Placemark(map.getCenter(),
   {
     hintContent: 'ПРОМТЕХНОЛОГИИ И ОБОРУДОВАНИЕ',
   },

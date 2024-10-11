@@ -1,0 +1,152 @@
+.machine {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.machine-block__title {
+  font-size: 29px;
+  font-weight: 800;
+  text-transform: uppercase;
+  /* margin-top: 22px; */
+  /* margin-bottom: 21px; */
+  margin: 21px 0 19px 66px;
+}
+
+@media (max-width: 930px) {
+  .machine-block__title {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.machine-block__desc {
+  display: flex;
+  margin-bottom: 31px;
+  justify-content: space-around;
+}
+
+@media (max-width: 930px) {
+  .machine-block__desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.desc__info {
+  max-width: 290px;
+  font-size: 22px;
+}
+
+.cost__desc {
+  margin-bottom: 7px;
+}
+
+.cost {
+  font-weight: 800;
+}
+
+.quant__desc {
+  margin-bottom: 7px;
+}
+
+.quant {
+  font-weight: 800;
+}
+
+@media (max-width: 930px) {
+  .desc__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.adv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 930px) {
+  .adv {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.adv__text {
+  font-size: 18px;
+}
+
+/* @media (max-width: 930px) {
+  .adv__text {
+    text-align: center;
+  }
+} */
+
+.adv__img {
+  width: 22px;
+  height: 22px;
+  margin-right: 22px;
+}
+
+.button__getcost {
+  width: 290px;
+  height: 45px;
+  font-family: 'Inter', sans-serif;
+  background: #005f61;
+  color: #fff;
+  border-radius: 7px;
+  padding: 12px 17px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .5s;
+  border: none;
+}
+
+.button__getcost:hover {
+  transition: .5s;
+  background: #008689;
+  cursor: pointer;
+}
+
+.desc__slider {
+  width: 600px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 450px;
+  background-color: #007779;
+}
+
+@media (max-width: 930px) {
+  .desc__slider {
+    margin-bottom: 21px;
+    width: 100%;
+  }
+}
+
+.machine-block__tabs {
+  max-width: 1200px;
+  min-height: 600px;
+  margin-bottom: 31px;
+  margin: 0 15px 0px 15px;
+}
+
+@media (max-width: 930px) {
+  .machine-block__tabs {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
