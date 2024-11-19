@@ -169,8 +169,16 @@
 
 .project-block__desctextimg {
   object-fit: cover;
+  margin-right: 30px;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 930px) {
+  .project-block__desctextimg {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 .project-block__features {
